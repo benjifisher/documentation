@@ -28,7 +28,8 @@ test:
     # Run behat.
     - bin/behat
     # Run a11y.
-    - grunt
+    - grunt --verbose:
+        timeout: 600
     # Look for merge conflicts.
     - scripts/merge_conflicts.sh
     # Run htmlproofer.
